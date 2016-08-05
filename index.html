@@ -12,21 +12,21 @@
         <div id="mad-libs-logo"></div>
       </div>
     </div>
-    <div ng-controller="MadLibsController">
+    <div ng-controller="MadLibsController as vm">
       <div class="jumbotron  clearfix">
         <h1>Provide the following words:</h1>
         <div class="form-inline">
-          <input class="form-control input-sm" ng-model="male_name" />
-          <input class="form-control input-sm" ng-model="job_title" />
-          <input class="form-control input-sm" ng-model="female_name" />
-          <input class="form-control input-sm" ng-model="useless_skill" />
-          <input class="form-control input-sm" ng-model="tedious_task" />
-          <input class="form-control input-sm" ng-model="robot_name" />
-          <input class="form-control input-sm" ng-model="times_faster" />
+          <input class="form-control input-sm" ng-model="vm.male_name" />
+          <input class="form-control input-sm" ng-model="vm.job_title" />
+          <input class="form-control input-sm" ng-model="vm.female_name" />
+          <input class="form-control input-sm" ng-model="vm.useless_skill" />
+          <input class="form-control input-sm" ng-model="vm.tedious_task" />
+          <input class="form-control input-sm" ng-model="vm.robot_name" />
+          <input class="form-control input-sm" ng-model="vm.times_faster" />
         </div>
       </div>
       <div class="row marketing">
-        <p>{{ male_name }} was a was a {{ job_title }} who loved technology. Although she loved parts of her job, she absolutely hated {{tedious_task}}. So, {{ female_name }} met with her mentor who told her to learn how to {{ useless_skill }}  with Thinkful. Thinkful didn't offer a course on {{ useless_skill }} so she studied programming instead. What a great decision! With her new skills, {{ female_name }} built a robot named, {{ robot_name }}, that not only loved {{tedious_task}} but did it {{ times_faster }} times faster.</p>
+        <p>{{ vm.male_name }} was a was a {{ vm.job_title }} who loved technology. Although she loved parts of her job, she absolutely hated {{vm.tedious_task}}. So, {{ vm.female_name }} met with her mentor who told her to learn how to {{ vm.useless_skill }}  with Thinkful. Thinkful didn't offer a course on {{ vm.useless_skill }} so she studied programming instead. What a great decision! With her new skills, {{ vm.female_name }} built a robot named, {{ vm.robot_name }}, that not only loved {{ vm.tedious_task }} but did it {{ vm.times_faster }} times faster.</p>
       </div>
     </div>
   </div>
