@@ -1,0 +1,23 @@
+.input-sm {
+       width: 150px !important;
+}
+
+#happy-face {
+       clear: both;
+       background: url(../images/mad-lib-happy-face.png) no-repeat 5% 35%;
+       background-size: 60px;
+}
+
+#mad-libs-logo {
+       background: url(../images/ng-mad-libs-logo.png) no-repeat 0 0;
+       width: 50%;
+       margin: auto auto;
+       background-size: 70%;
+       min-height: 100px;
+       padding-left: 5%;
+}
+
+.marketing { 
+       padding:0 10px;
+}
+ 
